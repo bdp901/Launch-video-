@@ -2,4 +2,4 @@ node_modules/
 videos/*/snapshots/review*/
 videos/*/capture.json
 videos/*/capture.err
-videos/*/renders/
+videos/*/render.log
