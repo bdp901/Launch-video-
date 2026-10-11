@@ -1,0 +1,287 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "32px",
+      "letterSpacing": "-0.6px",
+      "color": "#FAFAFA",
+      "sampleText": "Slate"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "fontWeight": "600",
+      "lineHeight": "28px",
+      "letterSpacing": "-0.5px",
+      "color": "#FAFAFA",
+      "sampleText": "Sign up to see all 15 games"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "color": "#FAFAFA",
+      "sampleText": "Welcome to The Rundown"
+    },
+    {
+      "role": "code",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "NFL Slate · The Rundown(function(){try{var c=localStorage.ge"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Inter",
+      "fontSize": "15px",
+      "fontWeight": "600",
+      "lineHeight": "21px",
+      "letterSpacing": "-0.375px",
+      "color": "#FAFAFA",
+      "sampleText": "About the NFL Slate"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Inter",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "color": "#FAFAFA",
+      "sampleText": "Week 5, game by game: what each defense does most, where it "
+    },
+    {
+      "role": "link",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "color": "#FAFAFA",
+      "sampleText": "Skip to content"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "JetBrains Mono",
+      "fontSize": "13px",
+      "fontWeight": "400",
+      "lineHeight": "17px",
+      "letterSpacing": "0.325px",
+      "color": "#FAFAFA",
+      "sampleText": "How to read it"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "lineHeight": "17px",
+      "letterSpacing": "0.325px",
+      "color": "#FAFAFA",
+      "sampleText": "Research"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      24,
+      32
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "8px",
+    "3.35544e+07px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 2px 8px 0px",
+      "count": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.836863 0.0160027 0.163654 / 0.35) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "×",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#0A0A0A",
+      "padding": "2px 8px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(10, 10, 10)",
+      "boxShadow": "none",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "height": "22px"
+    },
+    {
+      "label": "NFL▾",
+      "background": "#242424",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FAFAFA",
+      "padding": "6px 12px",
+      "borderRadius": "8px",
+      "border": "0px solid rgb(250, 250, 250)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "32px"
+    },
+    {
+      "label": "›",
+      "background": "#161616",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FAFAFA",
+      "padding": "0px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid rgba(255, 255, 255, 0.1)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 2px 8px 0px",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "height": "24px"
+    },
+    {
+      "label": "Week 5 (Current)▼",
+      "background": "oklab(0.260323 0.0000118092 0.00000521541 / 0.4)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FAFAFA",
+      "padding": "4px 10px",
+      "borderRadius": "8px",
+      "border": "1px solid rgb(251, 191, 36)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.836863 0.0160027 0.163654 / 0.35) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "fontSize": "13px",
+      "fontWeight": "400",
+      "height": "27px"
+    },
+    {
+      "label": "Sign in",
+      "background": "#FBBF24",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#0A0A0A",
+      "padding": "8px 16px",
+      "borderRadius": "8px",
+      "border": "0px solid rgb(10, 10, 10)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "height": "36px"
+    },
+    {
+      "label": "Top Matchups",
+      "background": "oklab(0.836863 0.0160027 0.163654 / 0.15)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FBBF24",
+      "padding": "4px 10px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.836863 0.0160027 0.163654 / 0.6)",
+      "boxShadow": "none",
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "height": "32px"
+    }
+  ],
+  "cards": [],
+  "nav": {
+    "label": "navigation",
+    "background": "#000000",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#FAFAFA",
+    "padding": "16px 24px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "height": "69.2656px"
+  },
+  "chips": [],
+  "statCells": [],
+  "tabs": [
+    {
+      "label": "34.3",
+      "background": "transparent",
+      "color": "#FAFAFA",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(250, 250, 250)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "auto"
+    },
+    {
+      "label": "12/32",
+      "background": "transparent",
+      "color": "lab(75.0771 -60.7313 19.4147)",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid lab(75.0771 -60.7313 19.4147)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "auto"
+    },
+    {
+      "label": "31/32",
+      "background": "transparent",
+      "color": "lab(64.4125 63.0291 19.2068)",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid lab(64.4125 63.0291 19.2068)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "auto"
+    }
+  ],
+  "backgrounds": [
+    {
+      "value": "radial-gradient(1200px 680px at 50% -12%, rgba(255, 255, 255, 0.055), rgba(0, 0, 0, 0) 62%), radial-gradient(900px 500px at 50% -6%, rgba(251, 191, 36, 0.03), rgba(0, 0, 0, 0) 60%)",
+      "area": 4050510
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.260323 0.0000118092 0.00000521541 / 0.95)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 156960
+    }
+  ]
+}

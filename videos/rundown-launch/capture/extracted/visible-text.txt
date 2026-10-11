@@ -1,0 +1,422 @@
+[a] Skip to content
+[span] Sign up to unlock the full NFL slate
+[span] Sign up →
+[a] Touchdowns
+[a] Tendencies
+[a] Defense vs Position
+[a] Alignment
+[a] Coverage
+[a] Coachspeak
+[a] Depth Chart
+[a] Playcallers
+[a] Top Performers
+[option] (Current)
+[span] Week 5 (Current)
+[a] Research
+[h1] Slate
+[span] Tour
+[p] Week
+[p] , game by game: what each defense does most, where it is soft and where it is tough, and how the
+[p] players
+[p] they face have done in those same spots.
+[span] Show
+[button] Top Matchups
+[button] Board
+[button] Projections
+[span] Filters
+[h2] Filters
+[button] Reset
+[span] Detail
+[button] All stats
+[button] Basic
+[span] Window
+[button] Season
+[option] Last…
+[option] Last
+[option] Last
+[option] Last
+[option] Last
+[span] Last…
+[span] Weeks
+[span] Season
+[option] 2026
+[option] 2025
+[option] 2024
+[span] 2026
+[span] Stats from
+[button] This season
+[button] 2025
+[button] Done
+[button] PHI
+[button] JAC
+[span] Sun 1:30pm
+[button] DAL
+[span] Fri 12:15am
+[span] PHI
+[span] JAC
+[span] Sun 1:30pm
+[span] JAC by 8
+[span] Total
+[span] 41.5
+[span] MPH
+[span] · Gust 11
+[span] Grass
+[span] PHI
+[span] JAC
+[button] Both
+[button] Matchups
+[button] Snaps
+[button] Coachspeak
+[span] Top matchups
+[span] PHI
+[span] attacking
+[span] JAC
+[span] Pressure
+[span] 38%
+[span] Blitz
+[span] 23%
+[p] Per game allowed by
+[span] JAC
+[p] , not the
+[p] named player’s own numbers.
+[div] Passing
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Jalen Hurts
+[span] Pass Attempts
+[span] 34.3
+[span] Completions
+[span] 23.5
+[span] Yards
+[span] 287.5
+[span] Explosive Play Rate
+[span] 10.8%
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Jalen Hurts
+[span] Touchdowns
+[span] Passer Rating
+[span] 83.3
+[span] EPA per Game
+[span] -1.98
+[div] Rushing
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Jalen Hurts
+[span] Carries
+[span] 4.8
+[span] Touchdowns
+[span] EPA per Game
+[span] 1.30
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Jalen Hurts
+[span] Explosive Play Rate
+[span] Position
+[span] Will Shipley
+[span] Carries
+[span] 16.8
+[span] Yards
+[span] 47.5
+[span] Touchdowns
+[span] Yards per Carry
+[span] 2.84
+[span] Success Rate
+[span] 26.9%
+[span] EPA per Game
+[span] -3.16
+[span] Explosive Play Rate
+[span] 4.5%
+[div] Receiving
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Alignment
+[span] Backfield
+[span] Will Shipley
+[span] Targets
+[span] 6.3
+[span] Receptions
+[span] Yards
+[span] Alignment
+[span] Perimeter
+[a] D. Wicks
+[a] M. Lemon
+[a] D. Cooper
+[span] Targets
+[span] Receptions
+[span] 10.3
+[span] Yards
+[span] 151.8
+[span] Alignment
+[span] Slot
+[a] M. Lemon
+[a] D. Wicks
+[a] J. Mundt
+[a] D. Goedert
+[span] Yards
+[span] 77.3
+[span] Alignment
+[span] Inline
+[a] J. Mundt
+[a] Z. Ertz
+[a] D. Goedert
+[span] Touchdowns
+[span] Passer Rating
+[span] 138
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Alignment
+[span] Perimeter
+[a] D. Wicks
+[a] M. Lemon
+[a] D. Cooper
+[span] Touchdowns
+[span] Passer Rating
+[span] 74.2
+[span] Alignment
+[span] Slot
+[a] M. Lemon
+[a] D. Wicks
+[a] J. Mundt
+[a] D. Goedert
+[span] Passer Rating
+[span] Alignment
+[span] Inline
+[a] J. Mundt
+[a] Z. Ertz
+[a] D. Goedert
+[span] Targets
+[span] 2.3
+[span] Receptions
+[span] Yards
+[span] 18.5
+[span] Top matchups
+[span] JAC
+[span] attacking
+[span] PHI
+[span] Pressure
+[span] 27%
+[span] Blitz
+[span] 20%
+[p] Per game allowed by
+[span] PHI
+[p] , not the
+[p] named player’s own numbers.
+[div] Passing
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Trevor Lawrence
+[span] Pass Attempts
+[span] 34.8
+[span] EPA per Game
+[span] 3.04
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Trevor Lawrence
+[span] Touchdowns
+[span] Passer Rating
+[span] 85.1
+[span] Explosive Play Rate
+[span] 7.6%
+[div] Rushing
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Position
+[span] Trevor Lawrence
+[span] Touchdowns
+[span] EPA per Game
+[span] 1.36
+[span] Position
+[a] B. Tuten
+[a] C. Rodriguez
+[span] Carries
+[span] 25.8
+[span] Yards
+[span] 106.3
+[span] Touchdowns
+[span] Success Rate
+[span] 44.7%
+[span] EPA per Game
+[span] -0.03
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Position
+[a] B. Tuten
+[a] C. Rodriguez
+[span] Explosive Play Rate
+[span] 6.8%
+[div] Receiving
+[span] Softest
+[span] Bottom 12 of the 32 in this look, scaled to the pool
+[span] Alignment
+[span] Backfield
+[a] B. Tuten
+[a] L. Allen
+[a] C. Rodriguez
+[span] Targets
+[span] 6.3
+[span] Receptions
+[span] 4.8
+[span] Alignment
+[span] Slot
+[a] P. Washington
+[a] B. Strange
+[a] J. Meyers
+[a] B. Thomas
+[span] Targets
+[span] Receptions
+[span] 7.5
+[span] Yards
+[span] Touchdowns
+[span] Toughest
+[span] Top 12 of the 32 in this look, scaled to the pool
+[span] Alignment
+[span] Backfield
+[a] B. Tuten
+[a] L. Allen
+[a] C. Rodriguez
+[span] Passer Rating
+[span] 85.4
+[span] Alignment
+[span] Perimeter
+[a] J. Meyers
+[a] P. Washington
+[a] B. Thomas
+[span] Targets
+[span] Receptions
+[span] 6.8
+[span] Yards
+[span] Touchdowns
+[span] Passer Rating
+[span] 86.2
+[span] Alignment
+[span] Inline
+[a] B. Strange
+[a] N. Boerkircher
+[span] Targets
+[span] Touchdowns
+[span] Top Matchups
+[p] — only looks a defense is in the league’s worst or best twelve, ranked on production allowed per game rather than on how often they play it. Position and alignment only, since a coverage is a context rather than a matchup.
+[span] Ranks
+[p] — 1 = softest, worked out over the weeks you picked. A defense that barely runs a look is left out rather than ranked on a handful of snaps, so a pool is not always 32 deep. The window applies to both halves of the page.
+[p] Numbers are as of Week 5.
+[p] Members Only
+[h3] Sign up to see all 15 games
+[p] You're seeing the top 2. Sign up to unlock the full slate plus 13 more games, every week.
+[a] Sign up →
+[h2] About the NFL Slate
+[p] The week laid out game by game with the defensive read attached. Where the other NFL boards rank all 32 defenses against each other, this answers the game-shaped question: in this matchup, what does this defense give up?
+[h3] How to read it
+[p] Each game carries the two defenses with what they concede through the air and on the ground, alongside the pass catchers whose usage lines up with those weaknesses. A soft spot only matters if someone on the other side works that area, so the player list beside each defense is the part that turns a rank into a matchup.
+[footer] therundown.gg ·
+[footer] NFL Slate
+[p] Daily slates, matchup grades, and projection-driven targets.
+[a] Follow @TheRundown_GG on X
+[a] Watch @TheRundownGG on YouTube
+[h3] Research
+[a] College Football
+[a] College Basketball
+[a] Support / FAQ
+[a] Get the app
+[a] Delete account
+[button] Cookie preferences
+[a] Pitchers
+[a] 1st Pitch
+[a] Matchup History
+[a] Stolen Bases
+[a] Milestones
+[a] Daily Tracker
+[a] Park Factors
+[a] Flight Sim
+[a] Touchdowns
+[a] Tendencies
+[a] Defense vs Position
+[a] Coverage
+[a] Defensive Alignment
+[a] Coachspeak
+[a] Draft Rankings
+[a] Mock Draft
+[a] Top Performers
+[a] Depth Charts
+[a] Playcallers
+[a] Goaltending
+[a] Special Teams
+[a] Shot Volume
+[a] Defense vs Position
+[a] Shot Map
+[a] Depth Charts
+[a] Top Performers
+[a] 1st Point
+[a] Defense vs Position
+[a] Playtypes
+[a] Rotations
+[a] Matchup Board
+[a] Front Office
+[a] Draft Board
+[h4] College Football
+[a] Postseason
+[a] Defense vs Position
+[a] Rankings
+[a] Touchdowns
+[a] Top Performers
+[a] Leaps & Comebacks
+[a] Draft Projections
+[a] Transfer Portal
+[h4] College Basketball
+[a] Big Board
+[a] Defense vs Position
+[a] Biggest Leaps
+[a] Transfer Portal
+[a] Bracketology
+[a] 1st Point
+[a] Defense vs Position
+[a] Rotations
+[p] therundown.gg. All rights reserved.
+[p] For entertainment and informational purposes only. Not affiliated with any sports league, team, or betting operator.
+[p] We use cookies that are needed to sign you in and to keep the site secure.
+[p] We also record anonymous usage so we can see which boards get used. You can turn that off.
+[a] Privacy Policy
+[button] Accept analytics
+[button] Reject analytics
+[span] Menu
+[span] Sport
+[span] NFL
+[span] NCAAF
+[span] MLB
+[span] NBA
+[span] NCAAB
+[span] WNBA
+[span] NHL
+[span] Slate
+[a] Touchdowns
+[a] Weather
+[a] Players
+[a] Tendencies
+[a] Defense vs Position
+[a] Alignment
+[a] Coverage
+[a] Rushing
+[a] Coachspeak
+[a] Depth Chart
+[a] Playcallers
+[a] Top Performers
+[a] Leaders
+[a] Fantasy
+[a] Research
+[button] Sign in
+[span] Theme
+[a] Add to Home Screen
+[a] Follow @TheRundown_GG on X
+[a] Watch @TheRundownGG on YouTube
+[div] Site tour
+[h2] Welcome to The Rundown
+[p] Research boards for fantasy. Pick a sport, pick a board, and click into anything that catches your eye. This takes about 30 seconds.
+[button] Skip tour
+[button] Next
+[button] Don't show tours automatically
