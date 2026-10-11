@@ -1,0 +1,233 @@
+{
+  "typography": [
+    {
+      "role": "heading",
+      "fontFamily": "Barlow Condensed",
+      "fontSize": "48px",
+      "fontWeight": "600",
+      "lineHeight": "48px",
+      "letterSpacing": "normal",
+      "color": "#303030",
+      "sampleText": "Subscribe to our emails"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Barlow Condensed",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "35.2px",
+      "letterSpacing": "normal",
+      "color": "#303030",
+      "sampleText": "Golf Drinking Game"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Barlow Condensed",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "letterSpacing": "normal",
+      "color": "#F7EFD8",
+      "sampleText": "SHOP OUR GOLF GAME ON AMAZON PRIME"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      4,
+      20
+    ],
+    "baseUnit": 8
+  },
+  "radius": [],
+  "shadows": [
+    {
+      "value": "rgb(164, 35, 37) 0px 0px 0px 0px inset",
+      "count": 1
+    },
+    {
+      "value": "rgb(255, 255, 255) 0px 0px 0px 0px inset",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Skip to content",
+      "background": "#000000",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "16px 24px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "rgb(164, 35, 37) 0px 0px 0px 0px inset",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "32px"
+    },
+    {
+      "label": "Open region and language selector\n      ",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#EEEAED",
+      "padding": "16px 4px",
+      "borderRadius": "0px",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "48px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#EEEAED",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(238, 234, 237)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "44px"
+    },
+    {
+      "label": "Shop Now →",
+      "background": "#809A84",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#EDE9DF",
+      "padding": "16px 24px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(237, 233, 223)",
+      "boxShadow": "rgb(255, 255, 255) 0px 0px 0px 0px inset",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "51.5938px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px 8px",
+      "borderRadius": "100px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "35.5938px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#303030",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(48, 48, 48)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "19.5938px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "4694.11px"
+    },
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#EDE9DF",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(237, 233, 223)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "702px"
+    },
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#EEEAED",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(238, 234, 237)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "687.125px"
+    },
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#0E6739",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(14, 103, 57)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "687.125px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "transparent",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#000000",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "height": "38px"
+  },
+  "chips": [
+    {
+      "label": "0",
+      "background": "#FAF5F5",
+      "color": "#000000",
+      "padding": "4px",
+      "borderRadius": "999px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "24.7969px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "linear-gradient(to top, rgb(49, 48, 48), rgba(49, 48, 48, 0))",
+      "area": 1347840
+    }
+  ],
+  "glass": []
+}

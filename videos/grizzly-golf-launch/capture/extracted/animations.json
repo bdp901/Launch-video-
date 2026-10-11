@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "webAnimations": 1,
+    "cssDeclarations": 740,
+    "scrollTargets": 25,
+    "cdpAnimations": 16,
+    "canvases": 0
+  },
+  "namedAnimations": [
+    "marquee-motion"
+  ],
+  "scrollTriggeredElements": 25,
+  "representativeAnimations": [
+    {
+      "type": "CSSAnimation",
+      "playState": "running",
+      "animationName": "marquee-motion",
+      "targetSelector": "div.marquee__wrapper",
+      "targetRect": {
+        "x": -899.2467041015625,
+        "y": -671.375,
+        "width": 4508,
+        "height": 19.1875,
+        "top": -671.375,
+        "right": 3608.7532958984375,
+        "bottom": -652.1875,
+        "left": -899.2467041015625
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "translate3d(calc(-50% - 12px), 0px, 0px)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 48000,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    }
+  ]
+}

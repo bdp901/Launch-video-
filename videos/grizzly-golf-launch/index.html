@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Grizzly Golf — Launch</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Barlow Condensed";
+        src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Barlow Condensed";
+        src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2");
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2");
+        font-weight: 600;
+      }
+
+      :root {
+        --green: #0e6739;
+        --cream: #eeeae0;
+        --orange: #ec561c;
+        --sage: #809a84;
+        --ink: #04150f;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--green);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+        background: var(--green);
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .layer {
+        position: absolute;
+        inset: 0;
+      }
+      .display {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 0.9;
+        letter-spacing: -0.005em;
+      }
+
+      /* ---------- shared logo lockup (keeps the original artwork geometry) ---------- */
+      .lockup {
+        position: relative;
+        width: 2000px;
+        height: 918px;
+        transform-origin: 0 0;
+      }
+      .lockup img {
+        position: absolute;
+        display: block;
+      }
+      .lockup .bear {
+        left: 7px;
+        top: 13px;
+        width: 530px;
+        height: 779px;
+      }
+      .lockup .script {
+        left: 495px;
+        top: 10px;
+        width: 1498px;
+        height: 898px;
+      }
+      .lockup-box {
+        position: absolute;
+        overflow: visible;
+      }
+
+      /* ---------- S1 logo reveal ---------- */
+      #s1-bg {
+        background: var(--green);
+      }
+      #s1-ring {
+        position: absolute;
+        left: 140px;
+        top: 560px;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        border: 6px solid var(--cream);
+      }
+      #s1-logo-wrap {
+        position: absolute;
+        left: 100px;
+        top: 720px;
+        width: 880px;
+        height: 404px;
+      }
+      #s1-logo {
+        width: 880px;
+        height: 404px;
+        position: relative;
+      }
+      #s1-logo .lockup {
+        scale: 0.44;
+      }
+      #s1-rule {
+        position: absolute;
+        left: 340px;
+        top: 1190px;
+        width: 400px;
+        height: 8px;
+        background: var(--orange);
+        border-radius: 4px;
+      }
+      #s1-tag {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1236px;
+        text-align: center;
+        color: var(--cream);
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 46px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      /* ---------- S2 kinetic headline ---------- */
+      #s2-bg {
+        background: var(--orange);
+      }
+      #s2-words {
+        position: absolute;
+        left: 90px;
+        top: 300px;
+        width: 900px;
+        color: var(--ink);
+      }
+      .hl-line {
+        display: flex;
+        gap: 34px;
+        height: 214px;
+        align-items: flex-end;
+        position: relative;
+      }
+      .w {
+        display: inline-block;
+        overflow: hidden;
+        padding: 0 4px;
+        position: relative;
+      }
+      .wi {
+        display: inline-block;
+        font-size: 236px;
+      }
+      #hl-goat-strike {
+        position: absolute;
+        left: 0;
+        top: 96px;
+        width: 100%;
+        height: 22px;
+        background: var(--ink);
+        transform-origin: 0 50%;
+      }
+      #hl-grizzly-block {
+        position: absolute;
+        left: -26px;
+        right: -30px;
+        top: 6px;
+        bottom: -8px;
+        background: var(--green);
+        transform-origin: 0 50%;
+      }
+      #hl-grizzly .wi {
+        position: relative;
+        font-size: 258px;
+      }
+      #hl-bear {
+        position: absolute;
+        right: 70px;
+        top: 1050px;
+        width: 220px;
+        height: 323px;
+      }
+
+      /* ---------- Feature scenes ---------- */
+      #f-bg1 {
+        background: var(--green);
+      }
+      #f-bg2 {
+        background: var(--cream);
+      }
+      #f-bg3 {
+        background: var(--ink);
+      }
+      .f-copy {
+        position: absolute;
+        left: 80px;
+        top: 150px;
+        width: 920px;
+      }
+      .eyebrow {
+        display: inline-block;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 10px 22px 8px;
+        border-radius: 999px;
+      }
+      .f-title {
+        margin-top: 22px;
+        font-size: 190px;
+      }
+      .f-title .w {
+        padding: 0;
+      }
+      .f-title .wi {
+        font-size: 190px;
+      }
+      .f-sub {
+        margin-top: 18px;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.25;
+        max-width: 880px;
+      }
+      #f1-copy {
+        color: var(--cream);
+      }
+      #f1-copy .eyebrow {
+        background: var(--orange);
+        color: var(--ink);
+      }
+      #f2-copy {
+        color: var(--ink);
+      }
+      #f2-copy .eyebrow {
+        background: var(--green);
+        color: var(--cream);
+      }
+      #f3-copy {
+        color: var(--cream);
+      }
+      #f3-copy .eyebrow {
+        background: var(--sage);
+        color: var(--ink);
+      }
+
+      /* phone */
+      #phone {
+        position: absolute;
+        left: 264px;
+        top: 690px;
+        width: 552px;
+        height: 1158px;
+        border-radius: 72px;
+        background: #0b0d0c;
+        padding: 16px;
+        box-shadow:
+          0 0 0 3px rgba(238, 234, 224, 0.28),
+          0 50px 90px rgba(0, 0, 0, 0.45);
+      }
+      #screen {
+        position: relative;
+        width: 520px;
+        height: 1126px;
+        border-radius: 58px;
+        overflow: hidden;
+        background: var(--cream);
+      }
+      #strip {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1560px;
+        height: 1126px;
+        display: flex;
+      }
+      .shot {
+        position: relative;
+        width: 520px;
+        height: 1126px;
+        overflow: hidden;
+        flex: none;
+      }
+      .shot img {
+        display: block;
+        width: 520px;
+        height: auto;
+      }
+      .tap {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        margin: -60px 0 0 -60px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.55);
+        border: 4px solid #fff;
+      }
+
+      /* callout chips + price badge */
+      .chips {
+        position: absolute;
+        left: 54px;
+        top: 1130px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        align-items: flex-start;
+      }
+      .chip {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 18px 30px 16px;
+        border-radius: 22px;
+        background: var(--cream);
+        color: var(--ink);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+      }
+      #f2-chips .chip {
+        background: var(--ink);
+        color: var(--cream);
+      }
+      #f3-chips .chip {
+        background: var(--cream);
+        color: var(--ink);
+      }
+      .price {
+        position: absolute;
+        left: 740px;
+        top: 640px;
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background: var(--orange);
+        color: var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ---------- CTA ---------- */
+      #s6-bg {
+        background: var(--green);
+      }
+      #s6-marquee {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 96px;
+        background: var(--orange);
+        overflow: hidden;
+      }
+      #s6-marquee-track {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        color: var(--ink);
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      #s6-marquee-track span {
+        padding-right: 60px;
+      }
+      #s6-logo {
+        position: absolute;
+        left: 160px;
+        top: 300px;
+        width: 760px;
+        height: 349px;
+      }
+      #s6-logo .lockup {
+        scale: 0.38;
+      }
+      #s6-head {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 760px;
+        text-align: center;
+        color: var(--cream);
+      }
+      #s6-head .w {
+        padding: 0 6px;
+      }
+      #s6-join .wi {
+        font-size: 130px;
+      }
+      #s6-gang .wi {
+        font-size: 200px;
+      }
+      #s6-sub {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1130px;
+        text-align: center;
+        color: var(--cream);
+        font-size: 44px;
+        font-weight: 600;
+      }
+      #s6-btn {
+        position: absolute;
+        left: 290px;
+        top: 1250px;
+        width: 500px;
+        height: 130px;
+        border-radius: 999px;
+        background: var(--cream);
+        color: var(--green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 64px;
+        letter-spacing: 0.04em;
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+      }
+      #s6-url {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1440px;
+        display: flex;
+        justify-content: center;
+      }
+      #s6-url-text {
+        position: relative;
+        color: var(--cream);
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 76px;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-bottom: 14px;
+      }
+      #s6-url-line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 8px;
+        background: var(--orange);
+        transform-origin: 0 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- ===== S1 · 0–3s · Logo reveal on brand green ===== -->
+      <section id="s1" class="clip" data-start="0" data-duration="3.2" data-track-index="0">
+        <div id="s1-bg" class="layer"></div>
+        <div id="s1-ring"></div>
+        <div id="s1-logo-wrap">
+          <div id="s1-logo">
+            <div class="lockup">
+              <img class="bear" id="s1-bear" src="assets/brand/logo-bear.png" alt="" />
+              <img class="script" id="s1-script" src="assets/brand/logo-script.png" alt="Grizzly Golf" />
+            </div>
+          </div>
+        </div>
+        <div id="s1-rule"></div>
+        <div id="s1-tag">Comfortable, Affordable Golf Apparel</div>
+      </section>
+
+      <!-- ===== S2 · 3–8s · Kinetic headline ===== -->
+      <section id="s2" class="clip" data-start="3" data-duration="5.2" data-track-index="1">
+        <div id="s2-bg" class="layer"></div>
+        <div id="s2-words" class="display">
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow><span class="wi">If</span></span>
+            <span class="w" data-layout-allow-overflow><span class="wi">you</span></span>
+          </div>
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow><span class="wi">can’t</span></span>
+          </div>
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow><span class="wi">be</span></span>
+            <span class="w" data-layout-allow-overflow><span class="wi">a</span></span>
+          </div>
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow id="hl-goat"><span class="wi">goat,</span><span id="hl-goat-strike"></span></span>
+          </div>
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow><span class="wi">be</span></span>
+            <span class="w" data-layout-allow-overflow><span class="wi">a</span></span>
+          </div>
+          <div class="hl-line">
+            <span class="w" data-layout-allow-overflow id="hl-grizzly"><span id="hl-grizzly-block"></span><span class="wi">grizzly.</span></span>
+          </div>
+        </div>
+        <img id="hl-bear" src="assets/brand/logo-bear.png" alt="" />
+      </section>
+
+      <!-- ===== S3–S5 · 8–23s · Three feature scenes, one persistent phone ===== -->
+      <section id="feat" class="clip" data-start="8" data-duration="15.2" data-track-index="2">
+        <div id="f-bg1" class="layer"></div>
+        <div id="f-bg2" class="layer"></div>
+        <div id="f-bg3" class="layer"></div>
+
+        <div id="f1-copy" class="f-copy">
+          <span class="eyebrow">#1 Bestseller</span>
+          <div class="f-title display">
+            <span class="w" data-layout-allow-overflow><span class="wi">The game</span></span>
+          </div>
+          <div class="f-sub">A drinking game made for the course.</div>
+        </div>
+        <div id="f2-copy" class="f-copy">
+          <span class="eyebrow">Signature logo</span>
+          <div class="f-title display">
+            <span class="w" data-layout-allow-overflow><span class="wi">Bear hats</span></span>
+          </div>
+          <div class="f-sub">Grizzly bear logo embroidered on front.</div>
+        </div>
+        <div id="f3-copy" class="f-copy">
+          <span class="eyebrow">Slim fit</span>
+          <div class="f-title display">
+            <span class="w" data-layout-allow-overflow><span class="wi">The polo</span></span>
+          </div>
+          <div class="f-sub">Pique texture. Nylon &amp; spandex blend.</div>
+        </div>
+
+        <div id="phone" data-layout-allow-overflow>
+          <div id="screen">
+            <div id="strip" data-layout-allow-overflow>
+              <div class="shot"><img id="shot1" src="assets/ui/game-ui.jpg" alt="The Game product page" /><div class="tap" id="tap1" style="left: 364px; top: 924px"></div></div>
+              <div class="shot"><img id="shot2" src="assets/ui/hat-ui.jpg" alt="Bear Hat product page" /><div class="tap" id="tap2" style="left: 347px; top: 844px"></div></div>
+              <div class="shot"><img id="shot3" src="assets/ui/polo-ui.jpg" alt="Polo product page" /><div class="tap" id="tap3" style="left: 347px; top: 1031px"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="f1-price" class="price display">$22</div>
+        <div id="f2-price" class="price display">$28</div>
+        <div id="f3-price" class="price display">$62</div>
+
+        <div id="f1-chips" class="chips">
+          <div class="chip">36 original cards</div>
+          <div class="chip">★ 122 reviews</div>
+        </div>
+        <div id="f2-chips" class="chips">
+          <div class="chip">Rope style</div>
+          <div class="chip">Adjustable snapback</div>
+        </div>
+        <div id="f3-chips" class="chips">
+          <div class="chip">Bear logo on chest</div>
+          <div class="chip">Script logo on sleeve</div>
+        </div>
+      </section>
+
+      <!-- ===== S6 · 23–30s · Call to action + URL ===== -->
+      <section id="s6" class="clip" data-start="23" data-duration="7" data-track-index="3">
+        <div id="s6-bg" class="layer"></div>
+        <div id="s6-marquee">
+          <div id="s6-marquee-track" data-layout-allow-overflow>
+            <span>If you can’t be a GOAT, be a GRIZZLY.</span><span>If you can’t be a GOAT, be a GRIZZLY.</span><span>If you can’t be a GOAT, be a GRIZZLY.</span><span>If you can’t be a GOAT, be a GRIZZLY.</span><span>If you can’t be a GOAT, be a GRIZZLY.</span>
+          </div>
+        </div>
+        <div id="s6-logo">
+          <div class="lockup">
+            <img class="bear" id="s6-bear" src="assets/brand/logo-bear.png" alt="" />
+            <img class="script" id="s6-script" src="assets/brand/logo-script.png" alt="Grizzly Golf" />
+          </div>
+        </div>
+        <div id="s6-head" class="display">
+          <div id="s6-join"><span class="w" data-layout-allow-overflow><span class="wi">Join the</span></span></div>
+          <div id="s6-gang"><span class="w" data-layout-allow-overflow><span class="wi">Grizzly gang</span></span></div>
+        </div>
+        <div id="s6-sub">We bring the look, you bring the rest.</div>
+        <div id="s6-btn" class="display">Shop now →</div>
+        <div id="s6-url">
+          <div id="s6-url-text"><span id="s6-url-chars">weargrizzlygolf.com</span><span id="s6-url-line"></span></div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const snap = "back.out(1.8)";
+
+      /* ---------------- S1 · logo reveal (0–3) ---------------- */
+      tl.fromTo("#s1-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.35, opacity: 0, duration: 0.9, ease: "power2.out" }, 0.1);
+      tl.fromTo("#s1-bear", { y: 260, rotation: -10, opacity: 0 }, { y: 0, rotation: 0, opacity: 1, duration: 0.6, ease: snap }, 0.2);
+      tl.fromTo("#s1-script", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.65, ease: "power3.inOut" }, 0.55);
+      tl.fromTo("#s1-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 1.15);
+      tl.fromTo("#s1-tag", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 1.3);
+      tl.fromTo("#s1-logo", { scale: 1 }, { scale: 1.05, duration: 1.2, ease: "none" }, 1.5);
+      tl.to(["#s1-logo-wrap", "#s1-rule", "#s1-tag"], { y: -60, opacity: 0, duration: 0.3, ease: "power2.in", stagger: 0.03 }, 2.7);
+
+      /* ---------------- S2 · kinetic headline (3–8) ---------------- */
+      tl.fromTo("#s2-bg", { clipPath: "circle(0% at 50% 52%)" }, { clipPath: "circle(80% at 50% 52%)", duration: 0.45, ease: "expo.out" }, 2.95);
+      const words = gsap.utils.toArray("#s2-words .wi");
+      const wordTimes = [3.25, 3.6, 3.95, 4.35, 4.6, 4.9, 5.55, 5.8, 6.1];
+      words.forEach((w, i) => {
+        const t = wordTimes[i];
+        tl.fromTo(w, { yPercent: 125, rotation: 6 }, { yPercent: 0, rotation: 0, duration: 0.32, ease: "power4.out" }, t);
+        tl.fromTo(w, { scale: 1.18 }, { scale: 1, duration: 0.4, ease: snap }, t);
+        // keep focus on the newest word: dim each word once the next one lands
+        if (i < words.length - 1) {
+          tl.to(w, { opacity: 0.32, duration: 0.15, ease: "none" }, wordTimes[i + 1]);
+        }
+      });
+      // payoff: full line back to full strength, GOAT crossed out, GRIZZLY boxed
+      tl.to(words.slice(0, -1), { opacity: 1, duration: 0.25, ease: "none" }, 6.55);
+      tl.fromTo("#hl-goat-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 6.6);
+      tl.fromTo("#hl-grizzly-block", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power4.out" }, 6.7);
+      tl.to("#hl-grizzly .wi", { color: "#eeeae0", duration: 0.12, ease: "none" }, 6.78);
+      tl.fromTo("#hl-bear", { y: 120, rotation: 14, opacity: 0, scale: 0.6 }, { y: 0, rotation: 0, opacity: 1, scale: 1, duration: 0.5, ease: snap }, 6.95);
+      tl.fromTo("#s2-words", { scale: 1 }, { scale: 1.03, duration: 1.0, ease: "none" }, 6.8);
+      tl.to(gsap.utils.toArray("#s2-words .hl-line").concat(["#hl-bear"]), { y: -160, opacity: 0, duration: 0.28, ease: "power3.in", stagger: 0.025 }, 7.72);
+
+      /* ---------------- Features (8–23) ---------------- */
+      // backgrounds
+      tl.fromTo("#f-bg1", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "expo.inOut" }, 7.85);
+      tl.fromTo("#f-bg2", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.55, ease: "expo.inOut" }, 12.8);
+      tl.fromTo("#f-bg3", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.55, ease: "expo.inOut" }, 17.8);
+
+      // phone: rides in with the first wipe, swipes between pages, drops out at the end
+      tl.fromTo("#phone", { y: 1300, rotation: 8 }, { y: 0, rotation: 0, duration: 0.75, ease: "power4.out" }, 8.0);
+      [13.0, 18.0].forEach((t, i) => {
+        tl.to("#strip", { x: -520 * (i + 1), duration: 0.6, ease: "power3.inOut" }, t - 0.1);
+        tl.to("#phone", { scale: 0.93, rotation: i ? 3 : -3, duration: 0.3, ease: "power2.out" }, t - 0.12);
+        tl.to("#phone", { scale: 1, rotation: 0, duration: 0.5, ease: snap }, t + 0.2);
+      });
+      tl.to("#phone", { y: 1400, rotation: -10, duration: 0.5, ease: "power3.in" }, 22.6);
+
+      // per-feature beats
+      const feats = [
+        { n: 1, t: 8.0, scroll: -110 },
+        { n: 2, t: 13.0, scroll: -130 },
+        { n: 3, t: 18.0, scroll: -60 },
+      ];
+      feats.forEach(({ n, t, scroll }) => {
+        const copy = `#f${n}-copy`;
+        const enter = t + (n === 1 ? 0.3 : 0.25);
+        // each copy block only exists visually during its own scene
+        tl.set([copy, `#f${n}-chips`, `#f${n}-price`], { opacity: 0 }, 0);
+        tl.set([copy, `#f${n}-chips`, `#f${n}-price`], { opacity: 1 }, enter);
+        tl.set([copy, `#f${n}-chips`, `#f${n}-price`], { opacity: 0 }, t + 4.95);
+        tl.fromTo(`${copy} .eyebrow`, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, enter);
+        tl.fromTo(`${copy} .wi`, { yPercent: 125 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, enter + 0.08);
+        tl.fromTo(`${copy} .f-sub`, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }, enter + 0.25);
+        tl.fromTo(`#f${n}-price`, { scale: 0, rotation: -25 }, { scale: 1, rotation: 0, duration: 0.5, ease: snap }, enter + 0.55);
+        tl.fromTo(`#f${n}-chips .chip`, { x: -420, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power4.out", stagger: 0.14 }, enter + 0.75);
+        // tap "Add to cart" on the real product page, then drift down the page
+        tl.fromTo(`#tap${n}`, { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "power2.out" }, t + 1.9);
+        tl.to(`#tap${n}`, { scale: 1.8, opacity: 0, duration: 0.4, ease: "power2.out" }, t + 2.1);
+        tl.fromTo(`#shot${n}`, { y: 0 }, { y: scroll, duration: 2.1, ease: "power1.inOut" }, t + 2.5);
+        tl.fromTo(`#f${n}-price`, { y: 0 }, { y: -18, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 1 }, t + 2.4);
+        // exit just before the next wipe
+        const out = t + 4.62;
+        tl.to([`${copy} .eyebrow`, `${copy} .f-title`, `${copy} .f-sub`], { y: -90, opacity: 0, duration: 0.26, ease: "power3.in", stagger: 0.03 }, out);
+        tl.to(`#f${n}-price`, { scale: 0, rotation: 25, duration: 0.25, ease: "power3.in" }, out);
+        tl.to(`#f${n}-chips .chip`, { x: -460, opacity: 0, duration: 0.26, ease: "power3.in", stagger: 0.04 }, out);
+      });
+
+      /* ---------------- S6 · CTA (23–30) ---------------- */
+      tl.fromTo("#s6-bg", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "expo.inOut" }, 22.95);
+      tl.fromTo("#s6-marquee", { yPercent: -100 }, { yPercent: 0, duration: 0.4, ease: "power3.out" }, 23.3);
+      tl.fromTo("#s6-marquee-track", { x: 0 }, { x: -1400, duration: 6.7, ease: "none" }, 23.3);
+      tl.fromTo("#s6-bear", { y: 240, rotation: -10, opacity: 0 }, { y: 0, rotation: 0, opacity: 1, duration: 0.55, ease: snap }, 23.4);
+      tl.fromTo("#s6-script", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.55, ease: "power3.inOut" }, 23.65);
+      tl.fromTo("#s6-join .wi", { yPercent: 125 }, { yPercent: 0, duration: 0.4, ease: "power4.out" }, 24.15);
+      tl.fromTo("#s6-gang .wi", { yPercent: 125, scale: 1.25 }, { yPercent: 0, scale: 1, duration: 0.5, ease: snap }, 24.4);
+      tl.fromTo("#s6-sub", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }, 24.9);
+      tl.fromTo("#s6-btn", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: snap }, 25.2);
+      tl.fromTo("#s6-url-text", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.9, ease: "steps(19)" }, 25.7);
+      tl.fromTo("#s6-url-line", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 26.6);
+      // button press beat
+      tl.to("#s6-btn", { scale: 0.92, duration: 0.12, ease: "power2.out" }, 27.2);
+      tl.to("#s6-btn", { scale: 1, duration: 0.45, ease: "elastic.out(1, 0.45)" }, 27.32);
+      tl.fromTo("#s6-logo", { scale: 1 }, { scale: 1.04, duration: 5.5, ease: "none" }, 24.3);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
