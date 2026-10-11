@@ -30,7 +30,6 @@
       :root {
         --green: #0e6739;
         --cream: #eeeae0;
-        --orange: #ec561c;
         --sage: #809a84;
         --ink: #04150f;
       }
@@ -133,7 +132,7 @@
         top: 1190px;
         width: 400px;
         height: 8px;
-        background: var(--orange);
+        background: var(--sage);
         border-radius: 4px;
       }
       #s1-tag {
@@ -152,7 +151,7 @@
 
       /* ---------- S2 kinetic headline ---------- */
       #s2-bg {
-        background: var(--orange);
+        background: var(--cream);
       }
       #s2-words {
         position: absolute;
@@ -255,8 +254,8 @@
         color: var(--cream);
       }
       #f1-copy .eyebrow {
-        background: var(--orange);
-        color: var(--ink);
+        background: var(--cream);
+        color: var(--green);
       }
       #f2-copy {
         color: var(--ink);
@@ -362,13 +361,22 @@
         width: 230px;
         height: 230px;
         border-radius: 50%;
-        background: var(--orange);
-        color: var(--ink);
+        background: var(--cream);
+        color: var(--green);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 100px;
         box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      #f2-price {
+        background: var(--green);
+        color: var(--cream);
+      }
+      #f3-price {
+        background: var(--sage);
+        color: var(--ink);
       }
 
       /* ---------- CTA ---------- */
@@ -381,7 +389,7 @@
         top: 0;
         width: 1080px;
         height: 96px;
-        background: var(--orange);
+        background: var(--sage);
         overflow: hidden;
       }
       #s6-marquee-track {
@@ -480,7 +488,7 @@
         bottom: 0;
         width: 100%;
         height: 8px;
-        background: var(--orange);
+        background: var(--sage);
         transform-origin: 0 50%;
       }
     </style>
@@ -536,7 +544,7 @@
             <span class="w" data-layout-allow-overflow id="hl-grizzly"><span id="hl-grizzly-block"></span><span class="wi">grizzly.</span></span>
           </div>
         </div>
-        <img id="hl-bear" src="assets/brand/logo-bear.png" alt="" />
+        <img id="hl-bear" src="assets/brand/logo-bear-green.png" alt="" />
       </section>
 
       <!-- ===== S3–S5 · 8–23s · Three feature scenes, one persistent phone ===== -->
@@ -570,9 +578,9 @@
         <div id="phone" data-layout-allow-overflow>
           <div id="screen">
             <div id="strip" data-layout-allow-overflow>
-              <div class="shot"><img id="shot1" src="assets/ui/game-ui.jpg" alt="The Game product page" /><div class="tap" id="tap1" style="left: 364px; top: 924px"></div></div>
-              <div class="shot"><img id="shot2" src="assets/ui/hat-ui.jpg" alt="Bear Hat product page" /><div class="tap" id="tap2" style="left: 347px; top: 844px"></div></div>
-              <div class="shot"><img id="shot3" src="assets/ui/polo-ui.jpg" alt="Polo product page" /><div class="tap" id="tap3" style="left: 347px; top: 1031px"></div></div>
+              <div class="shot"><img id="shot1" src="assets/ui/game-ui.jpg" alt="The Game product page" /><div class="tap" id="tap1" style="left: 364px; top: 873px"></div></div>
+              <div class="shot"><img id="shot2" src="assets/ui/hat-ui.jpg" alt="Bear Hat product page" /><div class="tap" id="tap2" style="left: 347px; top: 793px"></div></div>
+              <div class="shot"><img id="shot3" src="assets/ui/polo-ui.jpg" alt="Polo product page" /><div class="tap" id="tap3" style="left: 347px; top: 980px"></div></div>
             </div>
           </div>
         </div>
@@ -623,7 +631,7 @@
       <audio id="sfx-01" src="assets/sfx/whoosh.mp3" data-start="0.135" data-duration="0.575" data-volume="0.55" data-track-index="10"></audio> <!-- 0.30s bear rises -->
       <audio id="sfx-02" src="assets/sfx/impact-bass-1.mp3" data-start="0.474" data-duration="2.116" data-volume="0.5" data-track-index="11"></audio> <!-- 0.55s bear lands -->
       <audio id="sfx-03" src="assets/sfx/sparkle.mp3" data-start="1.15" data-duration="1.802" data-volume="0.45" data-track-index="10"></audio> <!-- 1.18s script finishes writing -->
-      <audio id="sfx-04" src="assets/sfx/whoosh.mp3" data-start="2.835" data-duration="0.575" data-volume="0.7" data-track-index="11"></audio> <!-- 3.00s orange circle burst -->
+      <audio id="sfx-04" src="assets/sfx/whoosh.mp3" data-start="2.835" data-duration="0.575" data-volume="0.7" data-track-index="11"></audio> <!-- 3.00s cream circle burst -->
       <audio id="sfx-05" src="assets/sfx/click.mp3" data-start="3.235" data-duration="0.366" data-volume="1.0" data-track-index="10"></audio> <!-- 3.31s word 1 -->
       <audio id="sfx-06" src="assets/sfx/click.mp3" data-start="3.585" data-duration="0.366" data-volume="1.0" data-track-index="11"></audio> <!-- 3.66s word 2 -->
       <audio id="sfx-07" src="assets/sfx/click.mp3" data-start="3.935" data-duration="0.366" data-volume="1.0" data-track-index="10"></audio> <!-- 4.01s word 3 -->
@@ -717,9 +725,9 @@
 
       // per-feature beats
       const feats = [
-        { n: 1, t: 8.0, scroll: -110 },
-        { n: 2, t: 13.0, scroll: -130 },
-        { n: 3, t: 18.0, scroll: -60 },
+        { n: 1, t: 8.0, scroll: -60 },
+        { n: 2, t: 13.0, scroll: -80 },
+        { n: 3, t: 18.0, scroll: -12 },
       ];
       feats.forEach(({ n, t, scroll }) => {
         const copy = `#f${n}-copy`;
